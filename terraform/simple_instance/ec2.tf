@@ -21,6 +21,7 @@ resource "aws_instance" "web_server_instance" {
   tags = {
     Name = "bc_workshop_ec2"
   }
+  ebs_optimized = true
 }
 
 data "aws_ami" "ubuntu" {
